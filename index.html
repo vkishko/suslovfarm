@@ -33,7 +33,22 @@
   grid-auto-columns: 1fr;
   display: grid;
 }
+.farm-booking_form-wrapper {
+  width: 40%;
+  max-width: 100%;
+  min-width: 28rem;
+}
+.section_header64 .padding-section-large {
+  padding-bottom: 2rem;
+}
+.section_testimonial15 .padding-section-large {
+  padding-top: 0;
+}
 @media screen and (max-width: 767px) {
+  .farm-booking_form-wrapper {
+    width: 100%;
+    min-width: 0;
+  }
   .farm-booking_form-row {
     grid-template-columns: 1fr;
   }
@@ -1653,7 +1668,7 @@ margin: 0rem !important;
                     </div>
                     <p class="text-size-medium">Забронируйте прогулку, занятие или проживание на ферме. Мы поможем выбрать формат под ваш опыт и настроение.</p>
                     <div class="margin-top margin-medium">
-                      <div class="max-width-large align-center">
+                      <div class="max-width-large align-center farm-booking_form-wrapper">
                         <div class="w-form">
                           <form id="wf-form-Farm-Booking-Form" name="wf-form-Farm-Booking-Form" data-name="Farm Booking Form" method="get" class="form_form">
                             <div class="form_field-wrapper"><label for="Farm-Booking-Name" class="form_field-label">Имя</label><input class="form_input w-input" maxlength="256" name="Farm-Booking-Name" data-name="Farm Booking Name" placeholder="Как к вам обращаться" type="text" id="Farm-Booking-Name" required=""></div>
