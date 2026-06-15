@@ -17,6 +17,11 @@
   -moz-osx-font-smoothing: grayscale;
   -o-font-smoothing: antialiased;
 }
+.navbar1_component {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 </style>
 </head>
 <body>
@@ -293,46 +298,11 @@ margin: 0rem !important;
         <a href="#" class="navbar1_logo-link w-nav-brand"><img loading="lazy" src="images/Logo-wide.svg" alt="" class="navbar1_logo"></a>
         <nav role="navigation" class="navbar1_menu is-page-height-tablet w-nav-menu">
           <div class="navbar1_menu-links">
-            <div data-delay="200" data-hover="true" class="navbar1_menu-dropdown w-dropdown">
-              <div class="navbar1_dropdown-toggle w-dropdown-toggle">
-                <div>Верховая езда</div>
-                <div class="dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                  </svg></div>
-              </div>
-              <nav class="navbar1_dropdown-list w-dropdown-list">
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">Блог</a>
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">О ферме</a>
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">Контакты</a>
-              </nav>
-            </div>
-            <div data-delay="200" data-hover="true" class="navbar1_menu-dropdown w-dropdown">
-              <div class="navbar1_dropdown-toggle w-dropdown-toggle">
-                <div>Обучение</div>
-                <div class="dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                  </svg></div>
-              </div>
-              <nav class="navbar1_dropdown-list w-dropdown-list">
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">Блог</a>
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">О ферме</a>
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">Контакты</a>
-              </nav>
-            </div>
+            <a href="#" class="navbar1_link w-nav-link">Верховая езда</a>
+            <a href="#" class="navbar1_link w-nav-link">Обучение</a>
             <a href="#" class="navbar1_link w-nav-link">Проживание</a>
-            <div data-delay="200" data-hover="true" class="navbar1_menu-dropdown w-dropdown">
-              <div class="navbar1_dropdown-toggle w-dropdown-toggle">
-                <div>О ферме</div>
-                <div class="dropdown-chevron w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                  </svg></div>
-              </div>
-              <nav class="navbar1_dropdown-list w-dropdown-list">
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">Блог</a>
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">О ферме</a>
-                <a href="#" class="navbar1_dropdown-link w-dropdown-link">Контакты</a>
-              </nav>
-            </div>
+            <a href="#" class="navbar1_link w-nav-link">О ферме</a>
+            <a href="#" class="navbar1_link w-nav-link">Контакты</a>
           </div>
           <div class="navbar1_menu-buttons">
             <a href="#" class="button is-secondary is-small w-button">Наши жеребцы</a>
@@ -409,7 +379,7 @@ margin: 0rem !important;
                     <div class="margin-bottom margin-small">
                       <h2 class="heading-style-h2">Цифры о нас</h2>
                     </div>
-                    <p class="text-size-medium">The numbers tell a story of people finding what they didn&#x27;t know they were looking for. Come see for yourself.</p>
+                    <p class="text-size-medium">Ферма создана для спокойного отдыха, уверенной верховой езды и живого общения с лошадьми. Здесь легко выбрать маршрут, занятие и формат отдыха под свой опыт.</p>
                     <div class="margin-top margin-medium">
                       <div class="button-group">
                         <a href="#" class="button is-secondary is-alternate w-button">Узнать</a>
@@ -469,7 +439,7 @@ margin: 0rem !important;
                       <div class="margin-bottom margin-small">
                         <h2 class="heading-style-h2">Верховая езда</h2>
                       </div>
-                      <p class="text-size-medium">It&#x27;s not about perfection or competition. It&#x27;s about the quiet moment when you understand what the horse is thinking, when the rhythm of hooves matches your own heartbeat, when the world narrows to just the two of you and the open land ahead.</p>
+                      <p class="text-size-medium">Маршруты проходят через поля, лесные дороги, овраги и открытые пространства. Мы подбираем лошадь под уровень всадника и помогаем почувствовать уверенность в седле.</p>
                     </div>
                     <div data-duration-in="400" data-duration-out="200" data-current="Tab 1" data-easing="ease" class="layout493_tabs w-tabs">
                       <div id="w-node-c8d8d073-ec2b-bf37-5c71-1337765cfe8a-ac8a3085" class="layout493_tabs-menu w-tab-menu">
@@ -477,7 +447,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Выезды в поля</h3>
                           <div class="layout493_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>Riders arrive as strangers and leave as part of something larger.</p>
+                              <p>Спокойные и живописные маршруты для тех, кто хочет увидеть ферму за пределами манежа.</p>
                             </div>
                           </div>
                         </a>
@@ -485,7 +455,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Тренировки на конкурном поле</h3>
                           <div class="layout493_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>The farm teaches patience through the simple act of moving together.</p>
+                              <p>Работа над посадкой, управлением и преодолением препятствий на подготовленном поле.</p>
                             </div>
                           </div>
                         </a>
@@ -493,7 +463,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Занятия на плацу</h3>
                           <div class="layout493_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>What you learn here stays with you long after you go home.</p>
+                              <p>Занятия на огороженной площадке для первых шагов, разминки и отработки точных команд.</p>
                             </div>
                           </div>
                         </a>
@@ -552,7 +522,7 @@ margin: 0rem !important;
                       <div class="margin-bottom margin-small">
                         <h2 class="heading-style-h2">Обучение верховой езде</h2>
                       </div>
-                      <p class="text-size-medium">It&#x27;s not about perfection or competition. It&#x27;s about the quiet moment when you understand what the horse is thinking, when the rhythm of hooves matches your own heartbeat, when the world narrows to just the two of you and the open land ahead.</p>
+                      <p class="text-size-medium">Обучение строится на уважении к лошади и понятных упражнениях. Инструктор помогает освоить базу, улучшить посадку и постепенно перейти к более уверенной езде.</p>
                     </div>
                     <div data-duration-in="400" data-duration-out="200" data-current="Tab 1" data-easing="ease" class="layout494_tabs w-tabs">
                       <div id="w-node-c8d8d073-ec2b-bf37-5c71-1337765cfebe-ac8a3085" class="layout494_tabs-menu w-tab-menu">
@@ -560,7 +530,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Лошади, которые слушают</h3>
                           <div class="layout494_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>Every rider finds their own reason to return to these trails.</p>
+                              <p>Наши лошади привыкли к людям и помогают новичкам спокойно включиться в занятие.</p>
                             </div>
                           </div>
                         </a>
@@ -568,7 +538,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Земля под ногами</h3>
                           <div class="layout494_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>The farm becomes familiar, then it becomes home.</p>
+                              <p>Учимся держать баланс, чувствовать темп и понимать, как лошадь реагирует на команды.</p>
                             </div>
                           </div>
                         </a>
@@ -576,7 +546,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Время, которое замедляется</h3>
                           <div class="layout494_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>That&#x27;s when the real riding begins.</p>
+                              <p>Занятия проходят без спешки, чтобы каждый всадник успел закрепить навык.</p>
                             </div>
                           </div>
                         </a>
@@ -635,15 +605,15 @@ margin: 0rem !important;
                       <div class="margin-bottom margin-small">
                         <h2 class="heading-style-h2">Проживание на ферме</h2>
                       </div>
-                      <p class="text-size-medium">It&#x27;s not about perfection or competition. It&#x27;s about the quiet moment when you understand what the horse is thinking, when the rhythm of hooves matches your own heartbeat, when the world narrows to just the two of you and the open land ahead.</p>
+                      <p class="text-size-medium">После прогулки можно остаться на ферме, переночевать в уютном доме, сходить в баню и провести вечер рядом с природой.</p>
                     </div>
                     <div data-duration-in="400" data-duration-out="200" data-current="Tab 1" data-easing="ease" class="layout493_tabs w-tabs">
                       <div id="w-node-c8d8d073-ec2b-bf37-5c71-1337765cfef2-ac8a3085" class="layout493_tabs-menu w-tab-menu">
                         <a data-w-tab="Tab 1" id="w-node-c8d8d073-ec2b-bf37-5c71-1337765cfef3-ac8a3085" class="layout493_tab-link w-inline-block w-tab-link w--current">
-                          <h3 class="heading-style-h5">Фермерская гостинница</h3>
+                          <h3 class="heading-style-h5">Фермерская гостиница</h3>
                           <div class="layout493_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>The horse becomes your mirror out there on the trail.</p>
+                              <p>Номера для гостей, которые хотят провести на ферме больше одного дня.</p>
                             </div>
                           </div>
                         </a>
@@ -651,7 +621,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Деревенский домик</h3>
                           <div class="layout493_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>Nature teaches you things that books never could.</p>
+                              <p>Отдельный домик для семьи или компании с атмосферой спокойного загородного отдыха.</p>
                             </div>
                           </div>
                         </a>
@@ -659,7 +629,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Баня</h3>
                           <div class="layout493_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>You&#x27;ll understand why people come back again and again.</p>
+                              <p>Теплая баня после прогулок, тренировок и насыщенного дня на свежем воздухе.</p>
                             </div>
                           </div>
                         </a>
@@ -716,9 +686,9 @@ margin: 0rem !important;
                   <div class="layout494_inner-wrapper">
                     <div class="layout494_header">
                       <div class="margin-bottom margin-small">
-                        <h2 class="heading-style-h2">Чем занаться на ферме</h2>
+                        <h2 class="heading-style-h2">Чем заняться на ферме</h2>
                       </div>
-                      <p class="text-size-medium">It&#x27;s not about perfection or competition. It&#x27;s about the quiet moment when you understand what the horse is thinking, when the rhythm of hooves matches your own heartbeat, when the world narrows to just the two of you and the open land ahead.</p>
+                      <p class="text-size-medium">На ферме можно провести целый день: от купания в реке и прогулок по лесу до поездок по окрестностям и спокойного отдыха у дома.</p>
                     </div>
                     <div data-duration-in="400" data-duration-out="200" data-current="Tab 1" data-easing="ease" class="layout494_tabs w-tabs">
                       <div id="w-node-c8d8d073-ec2b-bf37-5c71-1337765cff26-ac8a3085" class="layout494_tabs-menu w-tab-menu">
@@ -726,7 +696,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Купание в реке</h3>
                           <div class="layout494_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>Every rider finds their own reason to return to these trails.</p>
+                              <p>Летом гости отдыхают у чистого берега Оки и возвращаются на ферму к вечернему чаю.</p>
                             </div>
                           </div>
                         </a>
@@ -734,7 +704,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Прогулки по полям и лесам</h3>
                           <div class="layout494_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>The farm becomes familiar, then it becomes home.</p>
+                              <p>Маршруты подходят для неспешных прогулок, фотосъемок и знакомства с окрестностями.</p>
                             </div>
                           </div>
                         </a>
@@ -742,7 +712,7 @@ margin: 0rem !important;
                           <h3 class="heading-style-h5">Достопримечательности</h3>
                           <div class="layout494_paragraph">
                             <div class="margin-top margin-xxsmall">
-                              <p>That&#x27;s when the real riding begins.</p>
+                              <p>Рядом есть красивые места для коротких поездок, прогулок и семейных выездов.</p>
                             </div>
                           </div>
                         </a>
@@ -801,7 +771,7 @@ margin: 0rem !important;
                       <div class="margin-bottom margin-small">
                         <h2 class="heading-style-h2">Почему к нам приезжают</h2>
                       </div>
-                      <p class="text-size-medium">It starts with a single ride and becomes something deeper. The land speaks to you in a language older than words.</p>
+                      <p class="text-size-medium">К нам приезжают за простором, живыми впечатлениями и честной фермерской атмосферой, где каждый день связан с лошадьми и природой.</p>
                     </div>
                   </div>
                 </div>
@@ -873,7 +843,7 @@ margin: 0rem !important;
                       <h2 class="heading-style-h2">Наши жеребцы</h2>
                     </div>
                     <div class="layout414_content-right">
-                      <p class="text-size-medium">The farm offers more than rides through open country. It offers a chance to step away from the noise and remember what matters. Families discover something together in the saddle that they can&#x27;t find anywhere else. Couples find quiet moments on trails where the only sound is the rhythm of hooves and wind through the trees.</p>
+                      <p class="text-size-medium">Наши жеребцы отличаются характером, выносливостью и хорошей подготовкой. Для прогулок, тренировок и фотосессий мы подбираем лошадь так, чтобы гостю было спокойно и интересно.</p>
                       <div class="margin-top margin-medium">
                         <div class="button-group">
                           <a href="#" class="button is-secondary w-button">Узнать</a>
@@ -918,7 +888,7 @@ margin: 0rem !important;
                       <div class="margin-bottom margin-small">
                         <h2 class="heading-style-h2">Жизнь на ферме</h2>
                       </div>
-                      <p class="text-size-medium">Real moments from the land and the people who love it.</p>
+                      <p class="text-size-medium">Истории о маршрутах, сезонах, тренировках и буднях фермы.</p>
                     </div>
                   </div>
                 </div>
@@ -932,15 +902,15 @@ margin: 0rem !important;
                         <div class="margin-bottom margin-xsmall">
                           <div class="blog46_meta-wrapper">
                             <div class="tag">
-                              <div>Лошади</div>
+                              <div>Выездка, лето, поездки в поля</div>
                             </div>
                             <div class="text-size-small text-weight-semibold">9 минут чтения</div>
                           </div>
                         </div>
                         <div class="margin-bottom margin-xxsmall">
-                          <h3 class="heading-style-h5">How a horse teaches you to listen</h3>
+                          <h3 class="heading-style-h5">Летние выезды в поля и первые уроки выездки</h3>
                         </div>
-                        <div class="text-size-regular">They speak in movements, not words. You learn to understand.</div>
+                        <div class="text-size-regular">Рассказываем, как проходят спокойные полевые маршруты, работа на плацу и знакомство с лошадью.</div>
                         <div class="margin-top margin-small">
                           <div class="button-group">
                             <div class="button is-link is-icon">
@@ -961,73 +931,15 @@ margin: 0rem !important;
                         <div class="margin-bottom margin-xsmall">
                           <div class="blog46_meta-wrapper">
                             <div class="tag">
-                              <div>Лошади</div>
+                              <div>Зима, соревнования, плацы</div>
                             </div>
                             <div class="text-size-small text-weight-semibold">9 минут чтения</div>
                           </div>
                         </div>
                         <div class="margin-bottom margin-xxsmall">
-                          <h3 class="heading-style-h5">How a horse teaches you to listen</h3>
+                          <h3 class="heading-style-h5">Зимние тренировки, плацы и подготовка к стартам</h3>
                         </div>
-                        <div class="text-size-regular">They speak in movements, not words. You learn to understand.</div>
-                        <div class="margin-top margin-small">
-                          <div class="button-group">
-                            <div class="button is-link is-icon">
-                              <div>Читать</div>
-                              <div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"></path>
-                                </svg></div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="blog46_item">
-                      <a href="#" class="blog46_item-link w-inline-block">
-                        <div class="margin-bottom margin-small">
-                          <div class="blog46_image-wrapper"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316262904aee69_Placeholder%20Image%20-%20Landscape.svg" alt="" class="blog46_image"></div>
-                        </div>
-                        <div class="margin-bottom margin-xsmall">
-                          <div class="blog46_meta-wrapper">
-                            <div class="tag">
-                              <div>Лошади</div>
-                            </div>
-                            <div class="text-size-small text-weight-semibold">9 минут чтения</div>
-                          </div>
-                        </div>
-                        <div class="margin-bottom margin-xxsmall">
-                          <h3 class="heading-style-h5">How a horse teaches you to listen</h3>
-                        </div>
-                        <div class="text-size-regular">They speak in movements, not words. You learn to understand.</div>
-                        <div class="margin-top margin-small">
-                          <div class="button-group">
-                            <div class="button is-link is-icon">
-                              <div>Читать</div>
-                              <div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"></path>
-                                </svg></div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="blog46_item">
-                      <a href="#" class="blog46_item-link w-inline-block">
-                        <div class="margin-bottom margin-small">
-                          <div class="blog46_image-wrapper"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316262904aee69_Placeholder%20Image%20-%20Landscape.svg" alt="" class="blog46_image"></div>
-                        </div>
-                        <div class="margin-bottom margin-xsmall">
-                          <div class="blog46_meta-wrapper">
-                            <div class="tag">
-                              <div>Приключения</div>
-                            </div>
-                            <div class="text-size-small text-weight-semibold">7 минут чтения</div>
-                          </div>
-                        </div>
-                        <div class="margin-bottom margin-xxsmall">
-                          <h3 class="heading-style-h5">Riding through the old forest at dawn</h3>
-                        </div>
-                        <div class="text-size-regular">The trails remember everyone who has traveled them before.</div>
+                        <div class="text-size-regular">Как мы занимаемся в холодный сезон, поддерживаем форму лошадей и готовимся к соревнованиям.</div>
                         <div class="margin-top margin-small">
                           <div class="button-group">
                             <div class="button is-link is-icon">
@@ -1062,7 +974,7 @@ margin: 0rem !important;
                     <div class="margin-bottom margin-small">
                       <h1 class="heading-style-h1">Отзывы</h1>
                     </div>
-                    <p class="text-size-medium">Where every trail leads to something you didn&#x27;t know you were searching for.</p>
+                    <p class="text-size-medium">Гости возвращаются за спокойствием, лошадьми и ощущением настоящего отдыха за городом.</p>
                   </div>
                 </div>
               </div>
@@ -1110,7 +1022,7 @@ margin: 0rem !important;
                               </div>
                             </div>
                           </div>
-                          <h3 class="heading-style-h5">&quot;You feel the horse&#x27;s heartbeat beneath you and suddenly understand what it means to be truly alive.&quot;</h3>
+                          <h3 class="heading-style-h5">&quot;После первой прогулки по полям стало понятно, почему сюда возвращаются. Лошади спокойные, инструкторы внимательные, а вокруг тишина и простор.&quot;</h3>
                           <div class="margin-top margin-medium">
                             <div class="testimonial15_client">
                               <div class="testimonial15_client-info">
@@ -1157,7 +1069,7 @@ margin: 0rem !important;
                               </div>
                             </div>
                           </div>
-                          <h3 class="heading-style-h5">&quot;The horse becomes your teacher out there, showing you things about yourself you never knew. That&#x27;s when you understand why people return to this place again and again.&quot;</h3>
+                          <h3 class="heading-style-h5">&quot;Приезжали на выходные с семьей: катались, гуляли к реке, вечером отдыхали у дома. Очень живое и теплое место без суеты.&quot;</h3>
                           <div class="margin-top margin-medium">
                             <div class="testimonial15_client">
                               <div class="testimonial15_client-info">
@@ -1200,7 +1112,7 @@ margin: 0rem !important;
                       <div class="margin-bottom margin-small">
                         <h2 class="heading-style-h2">Галерея</h2>
                       </div>
-                      <p class="text-size-medium">See the farm through the seasons and through the eyes of those who visit.</p>
+                      <p class="text-size-medium">Ферма в разные сезоны: летние поля, зимние тренировки, прогулки к реке и будни конюшни.</p>
                     </div>
                   </div>
                 </div>
@@ -1282,9 +1194,9 @@ margin: 0rem !important;
                       <div class="text-style-tagline">Контакты</div>
                     </div>
                     <div class="margin-bottom margin-small">
-                      <h2 class="heading-style-h2">Find us</h2>
+                      <h2 class="heading-style-h2">Как нас найти</h2>
                     </div>
-                    <p class="text-size-medium">We&#x27;re easy to reach and easier to visit.</p>
+                    <p class="text-size-medium">Напишите или позвоните нам, чтобы уточнить маршруты, свободные даты, проживание и формат занятий.</p>
                   </div>
                 </div>
                 <div class="w-layout-grid contact13_content">
@@ -1362,9 +1274,9 @@ margin: 0rem !important;
                 <div class="text-align-center">
                   <div class="max-width-large align-center">
                     <div class="margin-bottom margin-small">
-                      <h2 class="heading-style-h2">Ready to ride?</h2>
+                      <h2 class="heading-style-h2">Готовы приехать?</h2>
                     </div>
-                    <p class="text-size-medium">Book your experience now or call us to talk about what you&#x27;re looking for.</p>
+                    <p class="text-size-medium">Забронируйте прогулку, занятие или проживание на ферме. Мы поможем выбрать формат под ваш опыт и настроение.</p>
                     <div class="margin-top margin-medium">
                       <div class="button-group is-center">
                         <a href="#" class="button w-button">Забронировать</a>
@@ -1446,7 +1358,7 @@ margin: 0rem !important;
                     <a href="#" class="footer3_link">Контакты</a>
                     <a href="#" class="footer3_link">Забронировать</a>
                     <a href="#" class="footer3_link">Галерея</a>
-                    <a href="#" class="footer3_link">© 2025 Countryside Horse Farm Experience. Все права защищены.</a>
+                    <a href="#" class="footer3_link">© 2025 Ферма Сусловых. Все права защищены.</a>
                   </div>
                 </div>
               </div>
@@ -1457,8 +1369,8 @@ margin: 0rem !important;
                 <div class="footer3_credit-text">Политика конфиденциальности</div>
                 <div class="w-layout-grid footer3_legal-list">
                   <a href="#" class="footer3_legal-link">Условия использования</a>
-                  <a href="#" class="footer3_legal-link">Настройки cookies</a>
-                  <a href="#" class="footer3_legal-link">Cookies Settings</a>
+                  <a href="#" class="footer3_legal-link">Настройки файлов куки</a>
+                  <a href="#" class="footer3_legal-link">Согласие на файлы куки</a>
                 </div>
               </div>
             </div>
