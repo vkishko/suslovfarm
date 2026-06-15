@@ -22,6 +22,9 @@
   top: 0;
   z-index: 999;
 }
+.blog46_meta-wrapper {
+  flex-wrap: wrap;
+}
 </style>
 </head>
 <body>
@@ -902,15 +905,24 @@ margin: 0rem !important;
                         <div class="margin-bottom margin-xsmall">
                           <div class="blog46_meta-wrapper">
                             <div class="tag">
-                              <div>Выездка, лето, поездки в поля</div>
+                              <div>Зима</div>
+                            </div>
+                            <div class="tag">
+                              <div>В полях</div>
+                            </div>
+                            <div class="tag">
+                              <div>Жизнь на ферме</div>
+                            </div>
+                            <div class="tag">
+                              <div>Река</div>
                             </div>
                             <div class="text-size-small text-weight-semibold">9 минут чтения</div>
                           </div>
                         </div>
                         <div class="margin-bottom margin-xxsmall">
-                          <h3 class="heading-style-h5">Летние выезды в поля и первые уроки выездки</h3>
+                          <h3 class="heading-style-h5">Зимние выезды в поля и жизнь у реки</h3>
                         </div>
-                        <div class="text-size-regular">Рассказываем, как проходят спокойные полевые маршруты, работа на плацу и знакомство с лошадью.</div>
+                        <div class="text-size-regular">Рассказываем, как проходят зимние маршруты по полям, отдых после прогулки и спокойные фермерские вечера.</div>
                         <div class="margin-top margin-small">
                           <div class="button-group">
                             <div class="button is-link is-icon">
@@ -931,15 +943,24 @@ margin: 0rem !important;
                         <div class="margin-bottom margin-xsmall">
                           <div class="blog46_meta-wrapper">
                             <div class="tag">
-                              <div>Зима, соревнования, плацы</div>
+                              <div>Лето</div>
+                            </div>
+                            <div class="tag">
+                              <div>Занятия на плацу</div>
+                            </div>
+                            <div class="tag">
+                              <div>Жизнь на ферме</div>
+                            </div>
+                            <div class="tag">
+                              <div>Река</div>
                             </div>
                             <div class="text-size-small text-weight-semibold">9 минут чтения</div>
                           </div>
                         </div>
                         <div class="margin-bottom margin-xxsmall">
-                          <h3 class="heading-style-h5">Зимние тренировки, плацы и подготовка к стартам</h3>
+                          <h3 class="heading-style-h5">Летние занятия на плацу и отдых на ферме</h3>
                         </div>
-                        <div class="text-size-regular">Как мы занимаемся в холодный сезон, поддерживаем форму лошадей и готовимся к соревнованиям.</div>
+                        <div class="text-size-regular">Как проходят летние занятия на плацу, знакомство с лошадьми и прогулки к реке после тренировки.</div>
                         <div class="margin-top margin-small">
                           <div class="button-group">
                             <div class="button is-link is-icon">
@@ -1278,9 +1299,42 @@ margin: 0rem !important;
                     </div>
                     <p class="text-size-medium">Забронируйте прогулку, занятие или проживание на ферме. Мы поможем выбрать формат под ваш опыт и настроение.</p>
                     <div class="margin-top margin-medium">
-                      <div class="button-group is-center">
-                        <a href="#" class="button w-button">Забронировать</a>
-                        <a href="#" class="button is-secondary w-button">Позвонить</a>
+                      <div class="max-width-medium align-center">
+                        <div class="w-form">
+                          <form id="wf-form-Farm-Booking-Form" name="wf-form-Farm-Booking-Form" data-name="Farm Booking Form" method="get">
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Name" class="form_field-label">Имя</label><input class="form_input w-input" maxlength="256" name="Farm-Booking-Name" data-name="Farm Booking Name" placeholder="Как к вам обращаться" type="text" id="Farm-Booking-Name" required=""></div>
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Email" class="form_field-label">Email</label><input class="form_input w-input" maxlength="256" name="Farm-Booking-Email" data-name="Farm Booking Email" placeholder="example@mail.ru" type="email" id="Farm-Booking-Email" required=""></div>
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Phone" class="form_field-label">Телефон</label><input class="form_input w-input" maxlength="256" name="Farm-Booking-Phone" data-name="Farm Booking Phone" placeholder="+7 (___) ___-__-__" type="tel" id="Farm-Booking-Phone" required=""></div>
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Type" class="form_field-label">Что забронировать</label><select id="Farm-Booking-Type" name="Farm-Booking-Type" data-name="Farm Booking Type" required="" class="form_input is-select-input w-select">
+                                <option value="">Выберите формат</option>
+                                <option value="Конная прогулка">Конная прогулка</option>
+                                <option value="Обучение верховой езде">Обучение верховой езде</option>
+                                <option value="Проживание на ферме">Проживание на ферме</option>
+                                <option value="Прогулка и проживание">Прогулка и проживание</option>
+                              </select></div>
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Stay" class="form_field-label">Вариант проживания</label><select id="Farm-Booking-Stay" name="Farm-Booking-Stay" data-name="Farm Booking Stay" class="form_input is-select-input w-select">
+                                <option value="">Выберите вариант</option>
+                                <option value="Номер в фермерском доме">Номер в фермерском доме</option>
+                                <option value="Деревенский домик">Деревенский домик</option>
+                              </select></div>
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Date-From" class="form_field-label">Дата с</label><input class="form_input w-input" name="Farm-Booking-Date-From" data-name="Farm Booking Date From" type="date" id="Farm-Booking-Date-From" required=""></div>
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Date-To" class="form_field-label">Дата по</label><input class="form_input w-input" name="Farm-Booking-Date-To" data-name="Farm Booking Date To" type="date" id="Farm-Booking-Date-To" required=""></div>
+                            <div class="form_field-wrapper"><label for="Farm-Booking-Message" class="form_field-label">Сообщение</label><textarea id="Farm-Booking-Message" name="Farm-Booking-Message" maxlength="5000" data-name="Farm Booking Message" placeholder="Напишите, сколько гостей приедет и какой формат отдыха вам интересен" class="form_input is-text-area w-input"></textarea></div>
+                            <div class="margin-bottom margin-xsmall"><label id="Farm-Booking-Checkbox" class="w-checkbox form_checkbox">
+                                <div class="w-checkbox-input w-checkbox-input--inputType-custom form_checkbox-icon"></div><input type="checkbox" name="Farm-Booking-Checkbox" id="Farm-Booking-Checkbox" data-name="Farm Booking Checkbox" required="" style="opacity:0;position:absolute;z-index:-1"><span for="Farm-Booking-Checkbox" class="form_checkbox-label text-size-small w-form-label">Я согласен с <a href="#" class="text-style-link">условиями обработки данных</a></span>
+                              </label></div><input type="submit" data-wait="Отправляем..." class="button w-button" value="Отправить заявку">
+                          </form>
+                          <div class="form_message-success-wrapper w-form-done">
+                            <div class="form_message-success">
+                              <div class="success-text">Спасибо! Ваша заявка получена.</div>
+                            </div>
+                          </div>
+                          <div class="form_message-error-wrapper w-form-fail">
+                            <div class="form_message-error">
+                              <div class="error-text">Что-то пошло не так. Попробуйте отправить форму еще раз.</div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1288,7 +1342,6 @@ margin: 0rem !important;
               </div>
             </div>
           </div>
-          <div class="cta65_image-wrapper"><img loading="eager" src="https://cdn.prod.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" alt="" class="cta65_image"></div>
         </div>
       </section>
     </main>
